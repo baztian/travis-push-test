@@ -3,4 +3,4 @@
 #git config --global user.name "Travis CI"
 export
 git config --list
-git push origin HEAD:${TRAVIS_BRANCH}
+# git push origin HEAD:${TRAVIS_BRANCH}
