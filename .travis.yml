@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.6"
+after_success:
+ - chmod +x ./push.sh
+ - ./push.sh
+script:
+  - python --version
