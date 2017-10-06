@@ -1,3 +1,8 @@
 language: bash
 after_success:
- - ./push.sh
+- "./push.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: qTE5HdFZ9yg8wz6HCKS+JFiwFC6e0uma2QBFW8wParaFTmKopOjZ0czOmnRk02DfH66cXBiKWiRJ+vGOR2XWkeTQsBTiOEW9ZZLU3IN+Exwr6a7rCF4wBtAkyb4IcO4W+YQBDF//Y1iDKpC9TGXuJgAspA83zqkKT67Z7TEgHJiLNmMO9tmz4ayDnc2CiZdeezhpwYub8B4ax9cujsjGFx+h5rL05p7y4kAaxtprmRhLQpAKUUoF9K8dwsyZxwsDDEPPsX6zKOJVfq4SY0JMgX/o9no5XNDpWfYKyYnJ4M6tV751nqc/+XGA/OLFWWAp2K/FR5QrNkSol0NYONMQSu8XfvBNML3Me5r9JyLbwMaOLssI3Iyyk81qOqtjJ6KoaaYAmXXrnWM2JTZkgxXS2prb24Gn8zAHExQHVFHjcA8JkhNdKtc6WQxkwAZSHzoDWswcd0uudgq7PxGDcO6oR8CmVGV6qyo6atDR3HyxkJxO/IXJ3niuw7PQGBkZEFQQjRhSHsQj77n+AiqGd+K8uAUvbdBWidX0xnacaSOwo1NlD4Yo8zcHcDILWp9YyTpdrKtoo888/AHm9nnPF/ZwrG32Bp5nHPHZGLhjakR6nJmfKAZyWx1Bc8yn+Zuxf9LQmiPdZPj7n8L6xUyyeRSUqTWC+oA2/x6oPhlkuOg8xN4=
+  file: push.sh
